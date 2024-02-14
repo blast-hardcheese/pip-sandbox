@@ -1,0 +1,18 @@
+[project]
+name = "mytest"
+version = "0.1.2"
+description = "This is an attempt of sourcing metadata from pyproject.toml"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+authors = [{name = "Foo"}]
+dependencies = [
+  "requests"
+]
+
+[project.scripts]
+beep = "boop:bop"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
